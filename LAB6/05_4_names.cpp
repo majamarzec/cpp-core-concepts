@@ -35,8 +35,8 @@ int main () {
        imie3[] = "Ania"   , imie4[] = "Jagoda"    ,
        imie5[] = "Rafal"  , imie6[] = "Ewa"       ;
 
-  // kazde imien oznacza adresy pierszych elementow poczatkow 
-  // tablica imiona to wskaznik na char     
+  // kazde z imion oznacza adresy pierszych elementow poczatkow 
+  // tablica imiona to szescioelementowa tablica statyczna ktorej kazdy z elementow jest wskaznikiem na char
   char* imiona[] = { imie1, imie2, imie3, imie4, imie5, imie6 };
 
   // wyciagniecie automatyczne ile jest tych imion

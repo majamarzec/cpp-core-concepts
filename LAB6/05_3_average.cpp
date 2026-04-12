@@ -16,6 +16,7 @@ using namespace std;
 
 const double* aver (const double* arr, size_t size, double& average) {
 
+    // srednia
     for (int i = 0; i < size ; i++ ){
         average += arr[i];
     }
@@ -25,13 +26,14 @@ const double* aver (const double* arr, size_t size, double& average) {
     // pocwiczmy petle po adresach
     // indeksem bedzie adres i przesuwamy sie o kolejne cegielki
 
+    // jedziemy po adreach, ale w gruncie rzeczy lecimy tu po kolejnych elementach pętli
     for (const double* ptr = &arr[0]; ptr - arr < size; ptr++){
         if (fabs(*ptr - average) < fabs(*nearest - average)){
             nearest = ptr;
         }
     }
 
-    return nearest;
+    return nearest; //adres elementu tablicy ktorego wartosc jest najblizsza sredniej
 }
 
 // fajne ale takie na myslenie [wskaźniki vs tablice statyczne]
@@ -39,7 +41,7 @@ const double* aver (const double* arr, size_t size, double& average) {
 int main () 
 {
     double arr[] = { 1, 7, 5, 4, 3, 2 };
-    size_t size = sizeof(arr) / sizeof(arr[0]);
+    size_t size = sizeof(arr) / sizeof(arr[0]); // metoda w tablicach staytycznych na wyciągnięcie rozmraiu tablicy
     double average = 0; // dzialamy na referencji tej zmiennej w aver wiec jej nie trzeba zwracac bo zmienia sie oryginal
 
     // jak przeniesc tablice do funkcji
@@ -53,3 +55,4 @@ int main ()
 
     return 0;
 }
+

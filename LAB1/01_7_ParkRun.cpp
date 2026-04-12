@@ -48,7 +48,7 @@ int main () {
         xB = fmod(sB, s_loop);
         xC = fmod(sC, s_loop);
 
-        nOkrB = sB / s_loop; //ok no nOknrB jest intem
+        nOkrB = sB / s_loop; //ok bo nOknrB jest intem
         nOkrC = sC / s_loop;
 
         cout << "CZAS: " << t << '\t'

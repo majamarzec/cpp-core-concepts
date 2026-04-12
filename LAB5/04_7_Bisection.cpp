@@ -8,6 +8,8 @@ double myfun (double x) {
   return exp(-x) - x;
 }
 
+// wskaznik funkcyjny (double (*MyFun) (double)
+
 double Bisection (double (*MyFun) (double), double a, double b, double eps) {
   double fa = MyFun(a) , fb = MyFun(b) , xc ;
   do {

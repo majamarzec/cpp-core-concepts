@@ -2,7 +2,7 @@
 using namespace std;
 
 double f (double x){
-    return (double) (x - 1) * (x - 3);
+    return (x - 1) * (x - 3);
 }
 
 void Distance (double a, double b, double dx, double& Xmin , double& Ymin){

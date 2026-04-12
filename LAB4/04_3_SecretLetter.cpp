@@ -33,7 +33,9 @@ int main () {
   	     cout << "Niepoprawny znak!" << endl;
     }
   }
-  cout << "Koniec prob, nie zgadle/as..." << endl;
+  cout << "Koniec prob, nie zgadle/as..." << endl
+       << "Chodziło o literę: " << secretletter << endl;
+  
   return 0;
 }
 

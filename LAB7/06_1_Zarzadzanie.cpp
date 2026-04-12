@@ -11,12 +11,12 @@ int Zarzadzanie(int* pamiec){
     if (N <=0) return -1; // mozna skipnac nawiasy bo jedno polecenie
 
     int* tab = new int[N]; // dynamiczna alokacja pamieci dla tablicy tab
-    for (int pos = 0; pos <N; pos++){
+    for (int pos = 0; pos < N; pos++){
         cout << " Podaj tab[" << pos << "] : ";
         cin >> tab[pos];
         }
 
-    for (int pos = 0; pos <N; pos++){
+    for (int pos = 0; pos < N; pos++){
         cout << " Wypisuję tab[" << pos << "] = " << tab[pos] << endl;
         }
 

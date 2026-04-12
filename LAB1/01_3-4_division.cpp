@@ -4,7 +4,7 @@ using namespace std;
 int main () {
   int a , b ;
 
-  cout << "Podaj dwie liczby: ";
+  cout << "Podaj dwie liczby: " << endl;
   cin >> a >> b;
 
   if (b == 0) {

@@ -89,7 +89,7 @@ int main ()
 
   // do tego przypiszemy sobie myexp
   double (* myFunPtrD) (double) = myexp; // obsluguje tylko doubla
-  float (* myFunPtrF) (float) = myexp; // obsluguje tylko doubla
+  float (* myFunPtrF) (float) = myexp; // obsluguje tylko floata
 
   cout << setprecision ( numeric_limits<double>::max_digits10 )
        << bisection2 ( myFunPtrD, 0. , 1. , numeric_limits<double>::epsilon() ) << endl;

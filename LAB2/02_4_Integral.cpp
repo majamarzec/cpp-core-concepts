@@ -11,10 +11,16 @@ double Fun (double x) {
 
 double Integral (double x0, double x1, int Nsteps) {
 
-    
+    double xDelta = (x1 - x0)/ Nsteps;
+    double integralValue = 0, constValue = (Fun(x0) + Fun(x1)) / 2 ;
+    for (double i = x0; i <= x1; i += xDelta){
+        integralValue += (Fun(i - xDelta) + Fun(i)) / 2 *  xDelta;
+    }
+    return integralValue;   
 }
 
 
 int main() {
-
+    double a = 0., b = M_PI, Nsteps = 1000;
+    cout << "Wynik całki: " << Integral (a, b, Nsteps) << endl;
 }

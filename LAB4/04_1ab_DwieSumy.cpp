@@ -8,7 +8,11 @@ using namespace std;
 // przy przekazywaniu zmiennej do funkcji 
 // operujemy bezposrednio na podanej do podfunkcji zmiennej a nie na jej kopii
 
+// to ze bedziemy dzialac na referencji przekazujemy funkcji w jej argumentach wejscia
+// potem juz nie korzystamy np z operatora wyłuskania jak we wskaznikach
+
 void DwieSumy( int a, int b , int& SumaPar, int& SumaNpar){
+
     for (int i = a; i<=b; i++){
         if ( i%2 == 0 ){
             SumaPar += i;

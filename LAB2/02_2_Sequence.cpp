@@ -43,4 +43,3 @@ int main(){
 }
 
 
-// do przemyslenia jeszcze

@@ -21,8 +21,8 @@ int main()
     double successCounter = 0;
 
     for (int i = 0; i < N; i++){
-        double X = ranGen(0,1), Y = ranGen(0,1);
+        double X = ranGen(0,1), Y = ranGen(0,M_PI);
         if (Y < (sqrt( 1 - pow(X,2) ) ) ) successCounter++;
     }
-    cout << successCounter/N * 4 << endl;
+    cout << successCounter/N  << endl;
 }

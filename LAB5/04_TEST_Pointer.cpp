@@ -8,7 +8,7 @@ double f (double x){
 void Distance (double (*fPtr) (double), double a, double b, double dx, double* Xmin , double* Ymin){
         
     for (double i = a; i <=b; i+=dx){
-        if (f(i) < *Ymin){
+        if (fPtr(i) < *Ymin){
             *Xmin = i;
             *Ymin = f(i);
         } 

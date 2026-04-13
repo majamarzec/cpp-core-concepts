@@ -3,8 +3,10 @@
 using namespace std;
 
 void Losuj(double& v0, double& kat){
+
     v0 = 110 + rand() % (130-110); //losowanie z przedziału [110,130]
     v0 = v0*1000/3600.; //zamiana na m/s
+    
     kat = 28 + rand() % (32-28); //losowanie z przedziału [28,32]
     kat = kat*2*M_PI/360; //zamiana kata na radiany
 }

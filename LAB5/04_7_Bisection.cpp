@@ -20,7 +20,7 @@ double Bisection (double (*MyFun) (double), double a, double b, double eps) {
       a = xc;
     }
   } while ( fabs(b - a) > eps );
-  return (a + b) / 2. ;
+  return (a + b) / 2. ; // miejsce zerowe funkcji
 }
 
 int main () {
